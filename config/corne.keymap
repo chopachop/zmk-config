@@ -103,9 +103,9 @@
 
     lower {
       bindings = <
-      &kp GRAVE    &kp KP_DIVIDE  &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp KP_MINUS            &kp K_MUTE  &kp HOME              &kp UP  &kp PG_UP    &kp K_PREVIOUS  &kp LG(LS(N3))
-         &trans  &kp KP_MULTIPLY  &kp KP_N4        &kp KP_N5  &kp KP_N6   &kp KP_PLUS          &kp C_VOL_UP  &kp LEFT            &kp DOWN  &kp RIGHT  &kp K_PLAY_PAUSE       &kp GRAVE
- &kp KP_NUMLOCK        &kp KP_N0  &kp KP_N1        &kp KP_N2  &kp KP_N3  &kp KP_COMMA          &kp C_VOL_DN   &kp END  &kp LG(LC(LS(N3)))  &kp PG_DN        &kp K_NEXT       &kp TILDE
+      &kp GRAVE    &kp KP_DIVIDE  &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp KP_MINUS            &kp K_MUTE  &kp HOME              &kp UP  &kp PG_UP        &kp C_PREV  &kp LG(LS(N4))
+         &trans  &kp KP_MULTIPLY  &kp KP_N4        &kp KP_N5  &kp KP_N6   &kp KP_PLUS          &kp C_VOL_UP  &kp LEFT            &kp DOWN  &kp RIGHT  &kp C_PLAY_PAUSE       &kp GRAVE
+ &kp KP_NUMLOCK        &kp KP_N0  &kp KP_N1        &kp KP_N2  &kp KP_N3  &kp KP_COMMA          &kp C_VOL_DN   &kp END  &kp LG(LC(LS(N4)))  &kp PG_DN        &kp C_NEXT       &kp TILDE
                                              &lt 3 BACKSPACE     &trans        &trans                &trans    &trans           &lt 3 DEL
       >;
     };
