@@ -30,55 +30,18 @@
   combos {
     compatible = "zmk,combos";
 
-    tab {
-      bindings = <&trans>;
-      key-positions = <2 3>;
+    L_cmd {
+      bindings = <&kp LEFT_GUI>;
+      key-positions = <15 14>;
     };
 
-    ctrl {
-      bindings = <&kp LCTRL>;
-      key-positions = <26 27>;
-    };
-
-    cmd {
-      bindings = <&kp LCMD>;
-      key-positions = <37 38>;
-    };
-
-    alt {
-      bindings = <&kp LEFT_ALT>;
-      key-positions = <39 40>;
-    };
-
-    shift {
-      bindings = <&kp LSHIFT>;
-      key-positions = <8 9>;
-    };
-
-    caps_word {
-      bindings = <&caps_word>;
-      key-positions = <17 18>;
-    };
-
-    delete {
-      bindings = <&kp DEL>;
-      key-positions = <32 33>;
+    R_cmd {
+      bindings = <&kp RIGHT_GUI>;
+      key-positions = <20 21>;
     };
   };
 
   macros {
-    zed_em_kay: zed_em_kay {
-      compatible = "zmk,behavior-macro";
-      label = "ZM_zed_em_kay";
-      #binding-cells = <0>;
-      bindings =
-        <&macro_press>,
-        <&kp LSHFT>,
-        <&macro_tap>,
-        <&kp Z &kp M &kp K>,
-        <&macro_release>,
-        <&kp LSHFT>;
-    };
   };
 
   keymap {
