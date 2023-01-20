@@ -30,14 +30,14 @@
   combos {
     compatible = "zmk,combos";
 
-    L_cmd {
-      bindings = <&kp LEFT_GUI>;
-      key-positions = <15 14>;
+    caps {
+      bindings = <&kp CAPS>;
+      key-positions = <17 18>;
     };
 
-    R_cmd {
-      bindings = <&kp RIGHT_GUI>;
-      key-positions = <20 21>;
+    del_word {
+      bindings = <&kp LA(BACKSPACE)>;
+      key-positions = <36 41>;
     };
   };
 
@@ -70,20 +70,20 @@
     navi {
       label = " Nav and KP";
       bindings = <
-      &kp GRAVE    &kp KP_DIVIDE  &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp KP_MINUS            &kp K_MUTE  &kp HOME              &kp UP  &kp PG_UP        &kp C_PREV  &kp LG(LS(N4))
-         &trans  &kp KP_MULTIPLY  &kp KP_N4        &kp KP_N5  &kp KP_N6   &kp KP_PLUS          &kp C_VOL_UP  &kp LEFT            &kp DOWN  &kp RIGHT  &kp C_PLAY_PAUSE       &kp GRAVE
- &kp KP_NUMLOCK        &kp KP_N0  &kp KP_N1        &kp KP_N2  &kp KP_N3  &kp KP_COMMA          &kp C_VOL_DN   &kp END  &kp LG(LC(LS(N4)))  &kp PG_DN        &kp C_NEXT       &kp TILDE
-                                             &lt 3 BACKSPACE     &trans        &trans                &trans    &trans           &lt 3 DEL
+      &kp GRAVE    &kp KP_DIVIDE  &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp KP_MINUS            &kp K_MUTE   &kp RG(LEFT)              &kp UP  &kp PG_UP        &kp C_PREV  &kp LG(LS(N4))
+         &trans  &kp KP_MULTIPLY  &kp KP_N4        &kp KP_N5  &kp KP_N6   &kp KP_PLUS          &kp C_VOL_UP       &kp LEFT            &kp DOWN  &kp RIGHT  &kp C_PLAY_PAUSE       &kp GRAVE
+ &kp KP_NUMLOCK        &kp KP_N0  &kp KP_N1        &kp KP_N2  &kp KP_N3  &kp KP_COMMA          &kp C_VOL_DN  &kp RG(RIGHT)  &kp LG(LC(LS(N4)))  &kp PG_DN        &kp C_NEXT       &kp TILDE
+                                             &lt 3 BACKSPACE     &trans        &trans                &trans         &trans           &lt 3 DEL
       >;
     };
 
     tiling {
       label = " Tiling and BT";
       bindings = <
- &out OUT_TOG  &trans  &trans  &trans         &trans  &bt BT_SEL 0          &bt BT_SEL 0      &kp LC(LEFT)      &kp LA(LC(ENTER))      &kp LC(RIGHT)  &kp LG(EQUAL)  &out OUT_TOG
-       &trans  &trans  &trans  &trans  &kp LG(LC(F))  &bt BT_SEL 1          &bt BT_SEL 1  &kp LC(LA(LEFT))  &kp LC(LA(BACKSPACE))  &kp LA(LC(RIGHT))  &kp LG(MINUS)        &trans
-       &trans  &trans  &trans  &trans         &trans    &bt BT_CLR            &bt BT_CLR            &trans          &kp LC(LA(C))             &trans         &trans        &trans
-                               &trans         &trans        &trans                &trans            &trans                 &trans
+ &out OUT_TOG  &trans  &trans         &trans         &trans  &bt BT_SEL 0          &bt BT_SEL 0      &kp LC(LEFT)      &kp LA(LC(ENTER))      &kp LC(RIGHT)  &kp LG(EQUAL)  &out OUT_TOG
+       &trans  &trans  &trans         &trans  &kp LG(LC(F))  &bt BT_SEL 1          &bt BT_SEL 1  &kp LC(LA(LEFT))  &kp LC(LA(BACKSPACE))  &kp LA(LC(RIGHT))  &kp LG(MINUS)        &trans
+       &trans  &trans  &trans  &kp LC(GRAVE)         &trans    &bt BT_CLR            &bt BT_CLR            &trans          &kp LC(LA(C))             &trans         &trans        &trans
+                                      &trans         &trans        &trans                &trans            &trans                 &trans
       >;
     };
   };
