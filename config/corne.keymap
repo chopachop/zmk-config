@@ -32,12 +32,12 @@
 
     caps {
       bindings = <&kp CAPS>;
-      key-positions = <17 18>;
+      key-positions = <12 13>;
     };
 
     del_word {
       bindings = <&kp LA(BACKSPACE)>;
-      key-positions = <36 41>;
+      key-positions = <23 22>;
     };
   };
 
