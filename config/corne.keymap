@@ -80,10 +80,10 @@
     tiling {
       label = " Tiling and BT";
       bindings = <
- &out OUT_TOG  &trans  &trans         &trans         &trans  &bt BT_SEL 0          &bt BT_SEL 0      &kp LC(LEFT)      &kp LA(LC(ENTER))      &kp LC(RIGHT)  &kp LG(EQUAL)  &out OUT_TOG
-       &trans  &trans  &trans         &trans  &kp LG(LC(F))  &bt BT_SEL 1          &bt BT_SEL 1  &kp LC(LA(LEFT))  &kp LC(LA(BACKSPACE))  &kp LA(LC(RIGHT))  &kp LG(MINUS)        &trans
-       &trans  &trans  &trans  &kp LC(GRAVE)         &trans    &bt BT_CLR            &bt BT_CLR            &trans          &kp LC(LA(C))             &trans         &trans        &trans
-                                      &trans         &trans        &trans                &trans            &trans                 &trans
+ &out OUT_TOG  &trans  &trans         &trans         &trans  &bt BT_SEL 0          &bt BT_SEL 0  &kp LC(LA(LG(LEFT)))      &kp LA(LC(ENTER))  &kp LC(LA(LG(RIGHT)))  &kp LG(EQUAL)  &out OUT_TOG
+       &trans  &trans  &trans         &trans  &kp LG(LC(F))  &bt BT_SEL 1          &bt BT_SEL 1      &kp LC(LA(LEFT))  &kp LC(LA(BACKSPACE))      &kp LA(LC(RIGHT))  &kp LG(MINUS)        &trans
+       &trans  &trans  &trans  &kp LC(GRAVE)         &trans    &bt BT_CLR            &bt BT_CLR                &trans          &kp LC(LA(C))                 &trans         &trans        &trans
+                                      &trans         &trans        &trans                &trans                &trans                 &trans
       >;
     };
   };
