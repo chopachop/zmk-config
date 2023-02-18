@@ -44,6 +44,11 @@
       bindings = <&kp LS(LA(LC(LEFT_GUI)))>;
       key-positions = <12 24>;
     };
+
+    minus {
+      bindings = <&kp MINUS>;
+      key-positions = <23 35>;
+    };
   };
 
   macros {
