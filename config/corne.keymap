@@ -65,20 +65,20 @@
     nums {
       label = " Nums and Fs";
       bindings = <
-&kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS         &kp LT      &kp GT    &kp AMPS    &kp PIPE     &kp DOT     &kp DOLLAR
- &kp LS(EQUAL)       &kp LS(N1)        &kp LS(N2)         &kp LS(N3)            &kp LS(N4)             &kp LS(N5)     &kp RS(N6)  &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp RS(N0)  &kp RS(MINUS)
-     &kp EQUAL     &kp NUMBER_1            &kp N2             &kp N3                &kp N4                 &kp N5         &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp MINUS
-                                                              &trans                &trans            &lt 3 ENTER    &lt 3 ENTER      &trans      &trans
+&kp TILDE  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(LS(TAB))    &kp LC(TAB)  &kp NON_US_BACKSLASH  &kp NON_US_HASH              &kp PIPE                &kp DOT  &kp GRAVE
+ &kp PLUS          &kp EXCL            &kp AT          &kp HASH        &kp DOLLAR      &kp PERCENT      &kp CARET         &kp AMPERSAND     &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER
+&kp EQUAL      &kp NUMBER_1            &kp N2            &kp N3            &kp N4           &kp N5         &kp N6                &kp N7           &kp N8                &kp N9                 &kp N0  &kp MINUS
+                                                         &trans            &trans      &lt 3 ENTER    &lt 3 ENTER                &trans           &trans
       >;
     };
 
     navi {
       label = " Nav and KP";
       bindings = <
-     &kp GRAVE    &kp KP_DIVIDE  &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp KP_MINUS      &kp K_MUTE   &kp RG(LEFT)              &kp UP  &kp PG_UP        &kp C_PREV  &kp LG(LS(N4))
-        &trans  &kp KP_MULTIPLY  &kp KP_N4        &kp KP_N5  &kp KP_N6   &kp KP_PLUS    &kp C_VOL_UP       &kp LEFT            &kp DOWN  &kp RIGHT  &kp C_PLAY_PAUSE       &kp GRAVE
-&kp KP_NUMLOCK        &kp KP_N0  &kp KP_N1        &kp KP_N2  &kp KP_N3  &kp KP_COMMA    &kp C_VOL_DN  &kp RG(RIGHT)  &kp LG(LC(LS(N4)))  &kp PG_DN        &kp C_NEXT       &kp TILDE
-                                            &lt 3 BACKSPACE     &trans        &trans          &trans         &trans           &lt 3 DEL
+    &kp LCMD    &kp KP_DIVIDE  &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp KP_MINUS      &kp K_MUTE   &kp RG(LEFT)              &kp UP  &kp PG_UP        &kp C_PREV  &kp RIGHT_GUI
+   &kp LCTRL  &kp KP_MULTIPLY  &kp KP_N4        &kp KP_N5  &kp KP_N6   &kp KP_PLUS    &kp C_VOL_UP       &kp LEFT            &kp DOWN  &kp RIGHT  &kp C_PLAY_PAUSE      &kp RCTRL
+&kp LEFT_ALT        &kp KP_N0  &kp KP_N1        &kp KP_N2  &kp KP_N3  &kp KP_COMMA    &kp C_VOL_DN  &kp RG(RIGHT)  &kp LG(LC(LS(N4)))  &kp PG_DN        &kp C_NEXT       &kp RALT
+                                          &lt 3 BACKSPACE     &trans        &trans          &trans         &trans           &lt 3 DEL
       >;
     };
 
