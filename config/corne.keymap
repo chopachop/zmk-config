@@ -65,7 +65,7 @@
     nums {
       label = " Nums and Fs";
       bindings = <
-&kp TILDE  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(LG(N))    &kp LG(LS(N))  &kp NON_US_BACKSLASH  &kp NON_US_HASH              &kp PIPE                &kp DOT  &kp GRAVE
+&kp TILDE  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LG(LA(N))    &kp LG(LS(N))  &kp NON_US_BACKSLASH  &kp NON_US_HASH              &kp PIPE                &kp DOT  &kp GRAVE
  &kp PLUS          &kp EXCL            &kp AT          &kp HASH        &kp DOLLAR    &kp PERCENT        &kp CARET         &kp AMPERSAND     &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER
 &kp EQUAL      &kp NUMBER_1            &kp N2            &kp N3            &kp N4         &kp N5           &kp N6                &kp N7           &kp N8                &kp N9                 &kp N0  &kp MINUS
                                                          &trans            &trans    &lt 3 ENTER      &lt 3 ENTER                &trans           &trans
