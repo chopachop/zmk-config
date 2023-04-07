@@ -65,10 +65,10 @@
     nums {
       label = " Nums and Fs";
       bindings = <
-&kp TILDE  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(LS(TAB))    &kp LC(TAB)  &kp NON_US_BACKSLASH  &kp NON_US_HASH              &kp PIPE                &kp DOT  &kp GRAVE
- &kp PLUS          &kp EXCL            &kp AT          &kp HASH        &kp DOLLAR      &kp PERCENT      &kp CARET         &kp AMPERSAND     &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER
-&kp EQUAL      &kp NUMBER_1            &kp N2            &kp N3            &kp N4           &kp N5         &kp N6                &kp N7           &kp N8                &kp N9                 &kp N0  &kp MINUS
-                                                         &trans            &trans      &lt 3 ENTER    &lt 3 ENTER                &trans           &trans
+&kp TILDE  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(LG(N))    &kp LG(LS(N))  &kp NON_US_BACKSLASH  &kp NON_US_HASH              &kp PIPE                &kp DOT  &kp GRAVE
+ &kp PLUS          &kp EXCL            &kp AT          &kp HASH        &kp DOLLAR    &kp PERCENT        &kp CARET         &kp AMPERSAND     &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER
+&kp EQUAL      &kp NUMBER_1            &kp N2            &kp N3            &kp N4         &kp N5           &kp N6                &kp N7           &kp N8                &kp N9                 &kp N0  &kp MINUS
+                                                         &trans            &trans    &lt 3 ENTER      &lt 3 ENTER                &trans           &trans
       >;
     };
 
@@ -85,8 +85,8 @@
     tiling {
       label = " Tiling and BT";
       bindings = <
-&out OUT_TOG  &trans  &trans         &trans         &trans  &bt BT_SEL 0    &bt BT_SEL 0  &kp LC(LA(LG(LEFT)))      &kp LA(LC(ENTER))  &kp LC(LA(LG(RIGHT)))  &kp LG(EQUAL)  &out OUT_TOG
-      &trans  &trans  &trans         &trans  &kp LG(LC(F))  &bt BT_SEL 1    &bt BT_SEL 1      &kp LC(LA(LEFT))  &kp LC(LA(BACKSPACE))      &kp LA(LC(RIGHT))  &kp LG(MINUS)        &trans
+&out OUT_TOG  &trans  &trans         &trans         &trans  &bt BT_SEL 0    &bt BT_SEL 2  &kp LC(LA(LG(LEFT)))      &kp LA(LC(ENTER))  &kp LC(LA(LG(RIGHT)))  &kp LG(EQUAL)  &out OUT_TOG
+      &trans  &trans  &trans         &trans  &kp LG(LC(F))  &bt BT_SEL 1    &bt BT_SEL 3      &kp LC(LA(LEFT))  &kp LC(LA(BACKSPACE))      &kp LA(LC(RIGHT))  &kp LG(MINUS)        &trans
       &trans  &trans  &trans  &kp LC(GRAVE)         &trans    &bt BT_CLR      &bt BT_CLR                &trans          &kp LC(LA(C))                 &trans         &trans        &trans
                                      &trans         &trans        &trans          &trans                &trans                 &trans
       >;
