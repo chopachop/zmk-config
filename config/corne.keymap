@@ -13,11 +13,17 @@
 // dt-formatter: reindentMultilineIntegerCells = "dedent"
 
   &mt {
-    flavor = "tap-preferred";
+    flavor = "tap-unless-interrupted";
+    // tapping-term-ms = <250>;
+    // quick-tap-ms = <80>;
+    // global-quick-tap;
   };
 
   &lt {
-    flavor = "tap-preferred";
+    flavor = "tap-unless-interrupted";
+    // tapping-term-ms = <250>;
+    // quick-tap-ms = <80>;
+    // global-quick-tap;
   };
 
 / {
