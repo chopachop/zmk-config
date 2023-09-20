@@ -12,6 +12,14 @@
 // dt-formatter: indent = "  "
 // dt-formatter: reindentMultilineIntegerCells = "dedent"
 
+  &mt {
+    flavor = "tap-preferred";
+  };
+
+  &lt {
+    flavor = "tap-preferred";
+  };
+
 / {
   // behaviors {
   //   hm: homerow_mods {
