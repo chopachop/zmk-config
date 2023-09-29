@@ -53,11 +53,6 @@
       bindings = <&kp LA(BACKSPACE)>;
       key-positions = <23 22>;
     };
-
-    hyper {
-      bindings = <&sk LS(LA(LC(LEFT_GUI)))>;
-      key-positions = <12 24>;
-    };
   };
 
   macros {
@@ -67,7 +62,7 @@
     compatible = "zmk,keymap";
 
     base {
-      label = " Base Layer";
+      label = "Base Layer";
       bindings = <
 &mt LEFT_GUI ESC   &kp Q  &kp W  &kp E            &kp R            &kp T          &kp Y        &kp U                  &kp I      &kp O    &kp P     &mt RIGHT_GUI LEFT_BRACKET
 &mt LCTRL TAB      &kp A  &kp S  &kp D            &kp F            &kp G          &kp H        &kp J                  &kp K      &kp L    &kp SEMI  &mt RCTRL APOS
@@ -77,7 +72,7 @@
     };
 
     nums {
-      label = " Nums and Fs";
+      label = "Nums";
       bindings = <
 &kp TILDE  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LG(LA(N))    &kp LG(LS(N))  &kp NON_US_BACKSLASH  &kp NON_US_HASH  &kp PIPE              &kp DOT                &kp GRAVE
 &kp PLUS   &kp EXCL          &kp AT            &kp HASH          &kp DOLLAR        &kp PERCENT      &kp CARET      &kp AMPERSAND         &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER
@@ -86,23 +81,23 @@
       >;
     };
 
-    navi {
-      label = " Nav and KP";
+    navi_tiling {
+      label = "Navi and Tiling";
       bindings = <
-&kp LCMD      &kp KP_DIVIDE    &kp KP_N7  &kp KP_N8        &kp KP_N9  &kp KP_MINUS    &kp K_MUTE    &kp RG(LEFT)   &kp UP              &kp LC(LEFT_ARROW)   &kp C_PREV        &kp RIGHT_GUI
-&kp LCTRL     &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5        &kp KP_N6  &kp KP_PLUS     &kp C_VOL_UP  &kp LEFT       &kp DOWN            &kp RIGHT            &kp C_PLAY_PAUSE  &kp RCTRL
-&kp LEFT_ALT  &kp KP_N0        &kp KP_N1  &kp KP_N2        &kp KP_N3  &kp KP_COMMA    &kp C_VOL_DN  &kp RG(RIGHT)  &kp LG(LC(LS(N4)))  &kp LC(RIGHT_ARROW)  &kp C_NEXT        &kp RALT
-                                          &lt 3 BACKSPACE  &trans     &trans          &trans        &trans         &lt 3 DELETE
+&kp LCMD      &kp LG(X)  &kp LC(LA(LG(LEFT_ARROW)))  &kp LC(LA(RETURN))     &kp LC(LA(LG(RIGHT_ARROW)))  &kp LG(EQUAL)               &kp K_MUTE    &kp RG(LEFT)        &kp UP              &kp LG(RIGHT_ARROW)  &kp C_PREV        &kp RIGHT_GUI
+&kp LCTRL     &kp LG(C)  &kp LC(LA(LEFT))            &kp LC(LA(BACKSPACE))  &kp LC(LA(RIGHT))            &sk LC(LA(LS(LEFT_GUI)))    &kp C_VOL_UP  &kp LEFT            &kp DOWN            &kp RIGHT            &kp C_PLAY_PAUSE  &kp RCTRL
+&kp LEFT_ALT  &kp LG(V)  &kp LC(LEFT)                &kp LC(LA(C))          &kp LC(RIGHT)                &kp LG(MINUS)               &kp C_VOL_DN  &kp RA(LEFT_ARROW)  &kp LG(LC(LS(N4)))  &kp RA(RIGHT_ARROW)  &kp C_NEXT        &kp RALT
+                                                     &lt 3 BACKSPACE        &trans                       &trans                      &trans        &trans              &lt 3 DELETE
       >;
     };
 
-    tiling {
-      label = " Tiling and BT";
+    bt_misc {
+      label = "BT and Other HKs";
       bindings = <
-&out OUT_TOG  &none  &none  &none          &none          &bt BT_SEL 0    &bt BT_SEL 2  &kp LC(LA(LG(LEFT)))  &kp LA(LC(ENTER))      &kp LC(LA(LG(RIGHT)))  &kp LG(EQUAL)  &out OUT_TOG
-&none         &none  &none  &none          &kp LG(LC(F))  &bt BT_SEL 1    &bt BT_SEL 3  &kp LC(LA(LEFT))      &kp LC(LA(BACKSPACE))  &kp LA(LC(RIGHT))      &kp LG(MINUS)  &none
-&none         &none  &none  &kp LC(GRAVE)  &none          &bt BT_CLR      &bt BT_CLR    &none                 &kp LC(LA(C))          &none                  &none          &none
-                            &trans         &trans         &trans          &trans        &trans                &trans
+&out OUT_TOG  &none  &none  &none          &none          &bt BT_SEL 0    &bt BT_SEL 2  &none   &none   &none  &none  &out OUT_TOG
+&none         &none  &none  &none          &kp LG(LC(F))  &bt BT_SEL 1    &bt BT_SEL 3  &none   &none   &none  &none  &none
+&none         &none  &none  &kp LC(GRAVE)  &none          &bt BT_CLR      &bt BT_CLR    &none   &none   &none  &none  &none
+                            &trans         &trans         &trans          &trans        &trans  &trans
       >;
     };
   };
